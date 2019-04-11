@@ -622,7 +622,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1653861920
 MonoBehaviour:
@@ -644,8 +644,8 @@ MonoBehaviour:
   isLeft: 0
   isRight: 0
   mustWaitForControl: 0
---- !u!61 &1653861921
-BoxCollider2D:
+--- !u!58 &1653861921
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -657,19 +657,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1910, y: 660}
-    newSize: {x: 1910, y: 660}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -500}
   serializedVersion: 2
-  m_Size: {x: 1910, y: 660}
-  m_EdgeRadius: 0
+  m_Radius: 955
 --- !u!1 &1704118102
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +970,7 @@ PrefabInstance:
     - target: {fileID: 7842251464749872173, guid: 5397455b053bc2b4d85528e9304dcd06,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7842251464749872173, guid: 5397455b053bc2b4d85528e9304dcd06,
         type: 3}
