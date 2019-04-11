@@ -10,14 +10,17 @@ public class AsteroidBehavior : MonoBehaviour
     
     public float Number;
     public static float PrevNumber = -1f;
+    public AudioClip Sound = null;
     
     public GameObject m_pos1;
     public GameObject m_pos2;
     public GameObject m_pos3;
 
+
     // Start is called before the first frame update
     void Start()
     {
+
         m_chrono = 0f;
 
         //Prends un nombre entre 0, 1 et 2
@@ -55,10 +58,7 @@ public class AsteroidBehavior : MonoBehaviour
     {
         m_chrono = m_chrono + Time.fixedDeltaTime;
         transform.position += Vector3.down * m_speed * Time.fixedDeltaTime;
-        transform.Rotate(Vector3.forward * 80 * Time.deltaTime);
-
-
-
+        transform.Rotate(Vector3.forward * 30 * Time.deltaTime);
     }
 }
 
