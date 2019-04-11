@@ -58,7 +58,7 @@ public class AsteroidBehavior : MonoBehaviour
     {
         m_chrono = m_chrono + Time.fixedDeltaTime;
         transform.position += Vector3.down * m_speed * Time.fixedDeltaTime;
-        transform.Rotate(Vector3.forward * 30 * Time.deltaTime);
+        
     }
 }
 

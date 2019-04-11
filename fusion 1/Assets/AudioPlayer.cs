@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour
 {
-	
 public static AudioPlayer instance = null;
 public AudioSource m_sound;
 
