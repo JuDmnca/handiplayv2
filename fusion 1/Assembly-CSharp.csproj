@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AsteroidBehavior.cs" />
+     <Compile Include="Assets\CreateObjectRegularly.cs" />
      <Compile Include="Assets\ItiBehavior.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Julie/Documents/GitHub/handiplayv2/fusion 1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

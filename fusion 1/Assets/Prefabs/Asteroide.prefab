@@ -114,3 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2311f17b569457b4c92b401317cc8a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_speed: 200
+  m_rb2D: {fileID: 0}
+  m_chrono: 0
+  Number: 0
+  m_pos1: {fileID: 465101192585224003, guid: ff76b374a4cbe8245b633aebdd972f7d, type: 3}
+  m_pos2: {fileID: 5169417168446689953, guid: 7cf5d7e57c3d8564c8caba4cdc221fa2, type: 3}
+  m_pos3: {fileID: 7621056021926369127, guid: abf7fe1ccbbb45d4fb9dd914bd01ef32, type: 3}

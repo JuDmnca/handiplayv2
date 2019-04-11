@@ -11,10 +11,11 @@ public class AsteroidBehavior : MonoBehaviour
     public GameObject m_pos1;
     public GameObject m_pos2;
     public GameObject m_pos3;
+
     // Start is called before the first frame update
     void Start()
     {
-        m_chrono = 0f;
+        //m_chrono = 0f;
 
         Number = Random.Range(0, 3);
         if (Number == 1)
@@ -37,8 +38,14 @@ public class AsteroidBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        m_chrono = m_chrono + Time.fixedDeltaTime;
+       // m_chrono = m_chrono + Time.fixedDeltaTime;
         transform.position += Vector3.down * m_speed * Time.fixedDeltaTime;
+
+       // m_chrono = m_chrono + Time.fixedDeltaTime;
+       // if (m_chrono > 5f)
+       // {
+          //  return voidStart;
+       // }
 
 
     }
