@@ -14,6 +14,8 @@ public class ItiBehavior : MonoBehaviour
 	public bool isLeft = false;
 	public bool isRight = false;
 
+	public bool mustWaitForControl = false;
+
 
 
     // Start is called before the first frame update
@@ -25,6 +27,13 @@ public class ItiBehavior : MonoBehaviour
     // Update is called once per frame
 	void FixedUpdate()
 	{
+		if (Input.GetAxis("Horizontal") == 0f) {
+			mustWaitForControl = false;
+		}
+
+		if (mustWaitForControl == true) {
+			return;
+		}
 
 		if (Input.GetAxis("Horizontal") < 0f) {
 		 	if (isLeft == false) {
@@ -37,6 +46,7 @@ public class ItiBehavior : MonoBehaviour
 		 		 isLeft = true;
 		 		}
 		 	}	
+		 	mustWaitForControl = true;
 		 }
 
 		 if (Input.GetAxis("Horizontal") > 0f) {
@@ -50,6 +60,14 @@ public class ItiBehavior : MonoBehaviour
 		 		 isRight = true;
 		 		}
 		 	}	
+		 	mustWaitForControl = true;
 		 }
 	}
+
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+	 Destroy(gameObject);
+	}
+
+
 }
