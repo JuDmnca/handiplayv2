@@ -15,7 +15,7 @@ public class ItiBehavior : MonoBehaviour
 	public bool isRight = false;
 
 	public bool mustWaitForControl = false;
-	public AudioClip Sound;
+	public AudioClip gameoversound;
 
 
 
@@ -67,6 +67,7 @@ public class ItiBehavior : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
+		AudioPlayer.instance.PlaySound(gameoversound);
 	 Destroy(gameObject);
 
 	}

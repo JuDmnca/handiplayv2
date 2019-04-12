@@ -58,7 +58,6 @@
      <Compile Include="Assets\CreateObjectRegularly.cs" />
      <Compile Include="Assets\ItiBehavior.cs" />
      <Compile Include="Assets\LevelLoader.cs" />
-     <Compile Include="Assets\menu.cs" />
      <Compile Include="Assets\ScoreScript.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Julie/Documents/GitHub/handiplayv2/fusion 1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

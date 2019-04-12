@@ -36,8 +36,8 @@ public class CreateObjectRegularly : MonoBehaviour
 
             if (m_timeSinceBeginning > 3)
             {
-                firstBehavior.m_speed += 400f;
-                secondBehavior.m_speed += 400f;
+                firstBehavior.m_speed += 200f;
+                secondBehavior.m_speed += 200f;
             }
 
 

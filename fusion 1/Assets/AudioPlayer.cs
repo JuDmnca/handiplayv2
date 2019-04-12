@@ -6,7 +6,7 @@ using UnityEngine;
 public class AudioPlayer : MonoBehaviour
 {
 public static AudioPlayer instance = null;
-public AudioSource m_sound;
+public AudioSource soundstream;
 
 
 
@@ -25,8 +25,8 @@ public AudioSource m_sound;
 
 	public void PlaySound(AudioClip soundClipToPlay)
 	{
-		m_sound.clip = soundClipToPlay;
-		m_sound.Play();
+		soundstream.clip = soundClipToPlay;
+		soundstream.Play();
 	}
 
 	// Update is called once per frame
