@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ItiBehavior : MonoBehaviour
 {
@@ -68,7 +69,9 @@ public class ItiBehavior : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D collision)
 	{
 		AudioPlayer.instance.PlaySound(gameoversound);
-	 Destroy(gameObject);
+		   SceneManager.LoadSceneAsync("GAME OVER");
+	 	Destroy(gameObject);
+
 
 	}
 

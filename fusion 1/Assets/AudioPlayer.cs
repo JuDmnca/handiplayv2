@@ -7,6 +7,7 @@ public class AudioPlayer : MonoBehaviour
 {
 public static AudioPlayer instance = null;
 public AudioSource soundstream;
+public AudioSource musique;
 
 
 
@@ -16,6 +17,7 @@ public AudioSource soundstream;
 		if (instance == null)
 		{
 		instance = this;
+		DontDestroyOnLoad(gameObject);
 		}
 		else
 		{
